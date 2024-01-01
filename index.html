@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Devotee Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Devotee Management</h1>
+        <form action="add_devotee.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit">Add Devotee</button>
+        </form>
+
+        <h2>Devotees List</h2>
+        <ul>
+            <!-- PHP code will fill this list -->
+        </ul>
+    </div>
+</body>
+</html>
